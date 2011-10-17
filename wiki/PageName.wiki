@@ -2,8 +2,8 @@
 
 = Introduction =
 
-What you need to do to upload with Atmel stk500 ISP programmer
-What need to be changed so Arduino IDE accepts and compiles for ATmega88
+  - What you need to do to upload with Atmel stk500 ISP programmer
+  - What need to be changed so Arduino IDE accepts and compiles for ATmega88
 
 
 = STK500 =
