@@ -476,6 +476,8 @@ void loop() {
 }
 
 void shiftLeft () {
+  // Testing if fading LEDs out before shifting makes a difference
+  // Fade out
   Timer1.initialize(1000 + 5000);
   delay(10);
   Timer1.initialize(1000 + 10000);
@@ -493,6 +495,7 @@ void shiftLeft () {
     }
   }
 
+  // Fade in
   Timer1.initialize(1000 + 40000);
   delay(1);
   Timer1.initialize(1000 + 20000);
