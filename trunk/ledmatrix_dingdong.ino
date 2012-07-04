@@ -538,9 +538,9 @@ void loop() {
     Serial.println("-- ding ");
     DingDong();
   }
-  if ((buttonHold == 1) & (button < 0)) {
-    buttonHold = 0;
-  }    
+//  if ((buttonHold == 1) & (button < 0)) {
+//    buttonHold = 0;
+//  }    
   Serial.println(".");
 }
 
@@ -590,6 +590,7 @@ void changeMessage() {
       }
       break;
     }
+    if
     message[message_size++] = receivedBuffer;
     Serial.print(receivedBuffer);
 
