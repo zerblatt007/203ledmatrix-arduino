@@ -590,10 +590,10 @@ void changeMessage() {
       }
       break;
     }
-    if
-    message[message_size++] = receivedBuffer;
-    Serial.print(receivedBuffer);
-
+    if ((receivedBuffer > 31) & (receivedBuffer < 128)) {
+      message[message_size++] = receivedBuffer;
+      Serial.print(receivedBuffer);
+    }
     // Test max string size
     if (message_size == sizeof(message) - 2) { // extra headroom for \0
       Serial.println("\nMax Message size reached !");
